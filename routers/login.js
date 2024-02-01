@@ -66,4 +66,21 @@ router.get('/getBookingData',function(req,res){
     }
   })
 })
+router.post('/myRecords', async (req, res) => {
+  try {
+    const { uname } = req.body;
+    const records = bookingData.find({ uname }, (err, docs) => {
+      if (!docs) {
+        res.status(401).json("no data found");
+      }
+      else {
+        res.status(200).json(docs)
+      }
+    });
+    console.log(req.body);
+  } catch (error) {
+    console.log(error)
+  }
+
+})
 module.exports = router;
