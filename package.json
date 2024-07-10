@@ -4,20 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "nodemon server.js"
-=======
-    "start": "node server.js"
->>>>>>> origin/main
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-<<<<<<< HEAD
     "dotenv": "^16.4.5",
-=======
->>>>>>> origin/main
     "express": "^4.18.2",
     "mongoclient": "^1.0.3",
     "mongoose": "^7.1.0",
